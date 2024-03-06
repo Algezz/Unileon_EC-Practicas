@@ -1,5 +1,8 @@
 def main():
     valor = int(input("Escribe un valor (Entre 0 y 10): "))
+    calcula_nota(valor)
+    
+def calcula_nota(valor):
     if  valor in range(0,5):
         print("Suspenso")
     elif valor in range(0,7):
