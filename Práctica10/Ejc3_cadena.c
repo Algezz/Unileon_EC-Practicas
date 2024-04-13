@@ -18,8 +18,10 @@ void invierte(char *cadenaOrigen,char *cadenaDestino){
     for (i=0;cadenaOrigen[i]!='\0';i++){
         count++;
     }
+    i--;
     for (j=0;cadenaOrigen[j]!='\0';j++){
-        cadenaDestino[j]=cadenaOrigen[count-j];
+        cadenaDestino[j]=cadenaOrigen[i];
+        i--;
     }
-    cadenaDestino[count+1]='\0';
+    cadenaDestino[count]='\0';
 }
