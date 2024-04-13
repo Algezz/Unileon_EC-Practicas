@@ -7,13 +7,13 @@ int main(){
     char *cadena;
     char *cadena2;     
     scanf("%d", &num);
+    while(getchar()!='\n' & getchar()!=EOF);
     cadena = (char *)malloc(sizeof(char)*num);
     cadena2 = (char *)malloc(sizeof(char)*num);
-    while(getchar()!='\n' & getchar()!=EOF);
     fgets(cadena, num, stdin);
-    printf("%s",cadena);
+    printf("%s", cadena);
     quitaespacios(cadena,cadena2);
-    printf("%s",cadena2);
+    printf("%s", cadena2);
     return 0;
 }
 
